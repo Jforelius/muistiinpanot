@@ -15,3 +15,14 @@ lftp 10.10.10.152:/users/All users/Paessler/PRTG Network Monitor> cat "PRTG Conf
 Nykyvuoden password eli PrTg@admin2019 -> devices -> group root
 
 säkäl vois toimii et saa tunnarin ssh
+
+SSH EI TOIMI:
+
+pitää mennä setup - notifications - sit pystyy runaa exe. sillä tehään ps
+scripti.
+
+scoudee admin root folderi - get-childitem -path c:\users\administrator\ | out-file -filepath c:\inetpub\output.txt vaikka
+
+tän jälkeen pitäs saada joku kopiointiscript.
+
+tabula rasa kopio: copy-item -path c:\administrator\root.txt c:\inetpub\123123.txt
